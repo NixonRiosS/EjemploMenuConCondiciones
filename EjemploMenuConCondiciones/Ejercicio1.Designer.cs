@@ -35,8 +35,8 @@
             this.txt_num2 = new System.Windows.Forms.TextBox();
             this.btn_evaluar = new System.Windows.Forms.Button();
             this.lbl_resultado = new System.Windows.Forms.Label();
+            this.btn_volver = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -107,27 +107,27 @@
             this.lbl_resultado.Text = "label4";
             this.lbl_resultado.Visible = false;
             // 
+            // btn_volver
+            // 
+            this.btn_volver.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_volver.Location = new System.Drawing.Point(495, 191);
+            this.btn_volver.Name = "btn_volver";
+            this.btn_volver.Size = new System.Drawing.Size(194, 79);
+            this.btn_volver.TabIndex = 7;
+            this.btn_volver.Text = "Volver Menu Principal";
+            this.btn_volver.UseVisualStyleBackColor = true;
+            this.btn_volver.Click += new System.EventHandler(this.btn_salir_Click);
+            // 
             // btn_salir
             // 
-            this.btn_salir.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir.Location = new System.Drawing.Point(495, 191);
+            this.btn_salir.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_salir.Location = new System.Drawing.Point(532, 302);
             this.btn_salir.Name = "btn_salir";
-            this.btn_salir.Size = new System.Drawing.Size(194, 79);
-            this.btn_salir.TabIndex = 7;
-            this.btn_salir.Text = "Volver Menu Principal";
+            this.btn_salir.Size = new System.Drawing.Size(125, 65);
+            this.btn_salir.TabIndex = 8;
+            this.btn_salir.Text = "Salir del Programa";
             this.btn_salir.UseVisualStyleBackColor = true;
-            this.btn_salir.Click += new System.EventHandler(this.btn_salir_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(532, 302);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 65);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Salir del Programa";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_salir.Click += new System.EventHandler(this.button1_Click);
             // 
             // Ejercicio1
             // 
@@ -136,8 +136,8 @@
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_salir);
+            this.Controls.Add(this.btn_volver);
             this.Controls.Add(this.lbl_resultado);
             this.Controls.Add(this.btn_evaluar);
             this.Controls.Add(this.txt_num2);
@@ -161,7 +161,7 @@
         private System.Windows.Forms.TextBox txt_num2;
         private System.Windows.Forms.Button btn_evaluar;
         private System.Windows.Forms.Label lbl_resultado;
+        private System.Windows.Forms.Button btn_volver;
         private System.Windows.Forms.Button btn_salir;
-        private System.Windows.Forms.Button button1;
     }
 }

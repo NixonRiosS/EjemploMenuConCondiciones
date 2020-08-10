@@ -28,5 +28,16 @@ namespace EjemploMenuConCondiciones
         {
             Application.Exit();
         }
+
+        
+        
+private void pb_2_Click(object sender, EventArgs e)
+        {
+            Ejercicio2 ejercicio2 = new Ejercicio2();
+            ejercicio2.Show();
+            this.Hide();
+
+        }
     }
-}
+    }
+
